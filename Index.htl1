@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Digital Desire Boxes</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap');
+
+  body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #0b0b0f;
+    color: #eee;
+    line-height: 1.6;
+  }
+  a {
+    color: #d94f5d;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+  }
+  header {
+    text-align: center;
+    padding: 4rem 1rem 3rem;
+  }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 0.3rem;
+    color: #d94f5d;
+  }
+  header p {
+    font-size: 1.3rem;
+    color: #fff1f2;
+    margin-bottom: 2rem;
+  }
+  .btn-primary {
+    background: #d94f5d;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+  }
+  .btn-primary:hover {
+    background: #b83e49;
+  }
+  section {
+    margin-bottom: 4rem;
+  }
+  h2 {
+    font-family: 'Playfair Display', serif;
+    color: #d94f5d;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .boxes {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .box {
+    background: #1c1c24;
+    border-radius: 12px;
+    padding: 1.8rem 1.5rem;
+    width: 280px;
+    box-shadow: 0 0 12px rgba(217,79,93,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .box h3 {
+    color: #ff758f;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+  .box p {
+    flex-grow: 1;
+    font-size: 0.95rem;
+    color: #f0c6c8;
+  }
+  .price {
+    margin-top: 1.2rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #d94f5d;
+  }
+  .steps {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .step {
+    background: #1c1c24;
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 8px rgba(217,79,93,0.4);
+  }
+  .step h3 {
+    margin-top: 0;
+    font-family: 'Playfair Display', serif;
+    color: #ff758f;
+  }
+  .step p {
+    margin-bottom: 0;
+    color: #f0c6c8;
+  }
+  .testimonials {
+    max-width: 700px;
+    margin: 0 auto;
+    font-style: italic;
+    color: #d67b87;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+  .testimonial {
+    background: #1c1c24;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(217,79,93,0.3);
+  }
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    gap: 0.7rem;
+  }
+  input[type="email"] {
+    flex-grow: 1;
+    padding: 0.8rem 1rem;
+    border-radius: 25px;
+    border: none;
+    font-size: 1rem;
+  }
+  input[type="email"]:focus {
+    outline: none;
+    box-shadow: 0 0 8px #d94f5d;
+  }
+  button[type="submit"] {
+    background: #d94f5d;
+    border: none;
+    border-radius: 25px;
+    padding: 0 1.5rem;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  button[type="submit"]:hover {
+    background: #b83e49;
+  }
+  footer {
+    text-align: center;
+    color: #4d4d4d;
+    font-size: 0.9rem;
+    padding: 2rem 1rem;
+    border-top: 1px solid #2a2a34;
+  }
+  footer a {
+    color: #d94f5d;
+    margin: 0 0.5rem;
+    font-weight: 600;
+  }
+
+  @media (max-width: 650px) {
+    .boxes {
+      flex-direction: column;
+      align-items: center;
+    }
+    form {
+      flex-direction: column;
+    }
+    button[type="submit"] {
+      width: 100%;
+      padding: 0.8rem 0;
+    }
+  }
+</style>
+</head>
+<body>
+<header class="container">
+  <h1>Digital Desire Boxes</h1>
+  <p>Your monthly escape into curated passion, mystery & mood</p>
+  <button class="btn-primary" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">Shop Now</button>
+</header>
+
+<section class="container" id="about">
+  <h2>What Are Digital Desire Boxes?</h2>
+  <p style="max-width:700px; margin: 0 auto; color:#f0c6c8; font-size:1.1rem; text-align:center;">
+    Digital Desire Boxes are curated collections of sensual stories, seductive playlists, intimate affirmations, and moody wallpapers—all delivered straight to your inbox. Each box is designed to transform your mood and ignite your passion, no matter where you are.
+  </p>
+</section>
+
+<section class="container" id="shop">
+  <h2>Choose Your Desire</h2>
+  <div class="boxes">
+    <div class="box">
+      <h3>Velvet Dream</h3>
+      <p>A soft, sultry bundle featuring whispered stories and soothing affirmations for your quiet nights.</p>
+      <div class="price">$29 / month</div>
+    </div>
+    <div class="box">
+      <h3>Jungle Heat</h3>
+      <p>Wild playlists and provocative poems that awaken your primal passion and ignite the senses.</p>
+      <div class="price">$39 / month</div>
+    </div>
+    <div class="box">
+      <h3>Psychedelic Chill</h3>
+      <p>A moody, mysterious set of wallpapers, dark tales, and hypnotic rhythms for the adventurous soul.</p>
+      <div class="price">$34 / month</div>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="how">
+  <h2>How It Works</h2>
+  <div class="steps">
+    <div class="step">
+      <h3>1. Choose Your Box</h3>
+      <p>Pick the mood that fits your desire—Velvet Dream, Jungle Heat, or Psychedelic Chill.</p>
+    </div>
+    <div class="step">
+      <h3>2. Subscribe & Receive</h3>
+      <p>Get your box delivered monthly via email with fresh, curated digital goodies.</p>
+    </div>
+    <div class="step">
+      <h3>3. Immerse & Enjoy</h3>
+      <p>Sink into the mood, explore the stories, playlists, and wallpapers crafted to seduce and inspire.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="testimonials">
+  <h2>What They’re Saying</h2>
+  <div class="testimonials">
+    <div class="testimonial">
+      "Velvet Dream transformed my nights — it's like a secret lover in my inbox." — A.M.
+    </div>
+    <div class="testimonial">
+      "Jungle Heat made me feel alive and dangerously sensual again. Highly recommend." — K.T.
+    </div>
+    <div class="testimonial">
+      "Psychedelic Chill is my new obsession. The mood is intoxicating." — J.L.
+    </div>
+  </div>
+</section>
+
+<section class="container" id="subscribe">
+  <h2>Subscribe & Shop</h2>
+  <form onsubmit="event.preventDefault(); alert('Thanks for subscribing! We’ll be in touch soon.'); this.reset();">
+    <input type="email" placeholder="Enter your email" required />
+    <button type="submit">Subscribe</button>
+  </form>
+  <p style="text-align:center; margin-top: 1rem; color: #ccc;">
+    Coming soon: full shop and payment options.
+  </p>
+</section>
+
+<footer>
+  <p>© 2025 Digital Desire Boxes</p>
+  <p>
+    <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">Contact</a>
+  </p>
+</footer>
+</body>
+</html>
